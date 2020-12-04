@@ -25,18 +25,6 @@ class MainActivity : AppCompatActivity() {
         applicacion = AccederApp(applicationContext)
 
         //aqui recupero el id de lo que se insertó en texto y lo guardo en la Bd pero falta que lo ponga en el campo de Descrip
-        login = findViewById(R.id.ctlLogin)
-        lblMensaje = findViewById(R.id.lblMensaje)
-
-
-        login.setOnLoginListener{ usuario, password ->
-            if(usuario=="usr" && password =="pass")
-                lblMensaje.text="Login Correcto"
-            
-            else
-                lblMensaje.text="Contraseña Incorrecta"
-
-        }
          }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
